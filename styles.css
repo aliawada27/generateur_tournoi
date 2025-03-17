@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.team-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.team-number {
+    flex: 0 0 30px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.team-input input {
+    flex: 1;
+}
+
+.bracket-container {
+    margin-top: 40px;
+    overflow-x: auto;
+    padding: 20px 0;
+    display: none;
+}
+
+.bracket {
+    display: flex;
+    justify-content: space-around;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 200px;
+}
+
+.round-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.team {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    cursor: move;
+    user-select: none;
+    position: relative;
+}
+
+.team:last-child {
+    border-bottom: none;
+}
+
+.team.winner {
+    background-color: #d5f5e3;
+    font-weight: bold;
+}
+
+.team.loser {
+    opacity: 0.6;
+}
+
+.match-connector {
+    flex: 1;
+    border-right: 2px solid #ddd;
+    margin: 0 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.drop-zone {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+@media (max-width: 768px) {
+    .bracket-container {
+        overflow-x: scroll;
+    }
+    
+    .round {
+        min-width: 150px;
+    }
+}

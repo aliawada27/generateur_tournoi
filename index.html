@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Brackets de Tournoi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Générateur de Brackets de Tournoi</h1>
+        
+        <div class="setup-section">
+            <h2>Configuration du tournoi</h2>
+            
+            <div class="form-group">
+                <label for="tournament-name">Nom du tournoi:</label>
+                <input type="text" id="tournament-name" placeholder="Mon tournoi">
+            </div>
+            
+            <div class="form-group">
+                <label for="team-count">Nombre d'équipes:</label>
+                <select id="team-count">
+                    <option value="4">4 équipes</option>
+                    <option value="8" selected>8 équipes</option>
+                    <option value="16">16 équipes</option>
+                </select>
+            </div>
+            
+            <div id="teams-container">
+                <!-- Les champs d'équipes seront générés dynamiquement ici -->
+            </div>
+            
+            <button id="generate-bracket" class="btn">Générer le bracket</button>
+        </div>
+        
+        <div class="bracket-container" id="bracket-container">
+            <!-- Le bracket sera généré ici -->
+        </div>
+        
+        <div class="actions">
+            <button id="save-bracket" class="btn">Sauvegarder</button>
+            <button id="load-bracket" class="btn">Charger</button>
+            <button id="reset-bracket" class="btn">Réinitialiser</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
