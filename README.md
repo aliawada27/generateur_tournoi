@@ -38,7 +38,7 @@ Une application web simple et intuitive qui permet de créer et gérer des brack
 Aucune installation spéciale n'est requise. Téléchargez simplement les fichiers et ouvrez `index.html` dans votre navigateur, ou hébergez-les sur n'importe quel serveur web.
 
 ```
-git clone https://github.com/votre-username/generateur-brackets-tournoi.git
+git clone https://github.com/aliawada27/generateur-brackets-tournoi.git
 cd generateur-brackets-tournoi
 ```
 
